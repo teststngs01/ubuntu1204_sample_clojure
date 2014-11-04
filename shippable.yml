@@ -12,7 +12,7 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
-install: cd leiningen-core; lein install; lein classpath | tail -n 1 > .lein-bootstrap; cd ..
+install: lein install; lein classpath | tail -n 1 > .lein-bootstrap; cd ..
 
 # Running the test with Leiningen
 script:
