@@ -12,7 +12,7 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
-install: lein install; 
+#install: lein install; 
 
 # Running the test with Leiningen
 script:
