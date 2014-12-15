@@ -18,3 +18,4 @@ before_script:
 script:
   - cd sample
   - lein test
+cache: true
