@@ -16,6 +16,7 @@ before_script:
 
 # Running the test with Leiningen
 script:
+  - git --version
   - cd sample
   - lein test
 #cache: true
