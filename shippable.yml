@@ -4,6 +4,8 @@ language: clojure
 lein:
   - lein2
 
+env:
+  - secure: cE+uxEvrGPzja22rvCEYQPP973I/tYTA8y/3r6W4Oge0THvjAC2Q5EmytvkYf4WvfNEKxpu6fzDFjnRBAr8EACWphQbyp0654C7peckDPMagII64lvHscwegqLL2AroyDGiJBa/yhoWkBntHuQ955mCCYBEAgg0/bsuGlKbB9Ca2xcGcnM9r0e9xSyd8ncL72ao9rdWGdQtikaC0JY9DJRajvMQgO0cqmiQjsFaZd32RPAKt3yKNjJaGB+mZYrYuM/JsisjYFGedGk43aBDLXeSmXuKUR1Sg796pRnNe2P3tEGOSieTnrS5y7bwFFExWHp+RxEyUL06+sdVkXqHRdQ==
 
 build_image: shippableimages/ubuntu1204_clojure #:0.0.3
 
@@ -11,6 +13,7 @@ build_image: shippableimages/ubuntu1204_clojure #:0.0.3
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - echo $key1
 
 #install: lein install; 
 
